@@ -48,7 +48,7 @@ This project was created to fulfill the requirements of the CSC 365 - Client Sid
 
 ## Getting Started
 
-To view the website, visit [https://yourwebsiteurlhere.com](https://yourwebsiteurlhere.com).
+To view the website, visit [https://jovial-pony-ad1674.netlify.app/](https://yourwebsiteurlhere.com).
 
 To clone this repository and run the website locally, follow these steps:
 
