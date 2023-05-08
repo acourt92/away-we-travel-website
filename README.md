@@ -1,8 +1,6 @@
 # away-we-travel-website
 Away We Travel - Static Website Resembling a Travel Blog for CSC 365 (Client-Side Web Development) Project
 
-Sure! Here's an example README file for your Away We Travel website:
-
 # Away We Travel Website
 
 This is the repository for the Away We Travel website, created as a final project for CSC 365 - Client Side Web Development.
