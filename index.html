@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Away We Travel | Homepage</title>
+
+    <link href="styles/index.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/print.css" media="print">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN to add clickable icons to nav menu on small-screen devices-->
+    <script src="https://kit.fontawesome.com/6472a029dc.js" crossorigin="anonymous"></script>
+
+    <link href="images/webpage_travel.ico" rel="icon">
+
+    <meta name="description" content="Travel stories, travel tips, and a travel bucket list curated
+    for people who love to travel.">
+    <meta name="keywords" content="and away we travel, travel blog, luxury travel, nomad travel, affordable travel">
+    <meta name="author" content="Andrew Court">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="images/away-we-travel-logo.png" alt="And Away We Travel logo"></a>
+
+            <div class="navigation-links" id="navigationLinks">
+                <i class="fa-solid fa-xmark" onclick="hideNavMenu()"></i>
+                <!-- add 'x' icon to nav link for media queries-->
+                <ul>
+                    <li id="active"><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="destinations.html">DESTINATIONS</a></li>
+                    <li><a href="tips-for-solo-travel.html">TIPS FOR SOLO TRAVEL</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showNavMenu()"></i> <!--menu icon to nav link for media queries-->
+        </nav>
+        <article class="article-text">
+            <h1>LIVE. TRAVEL. DISCOVER.</h1>
+            <p>
+                Away We Travel is a travel blog that is dedicated to providing its readers with<br>valuable insights and
+                resources
+                for making the most out of their travel experiences.
+            </p>
+            <a href="#subscribe_newsletter" class="sign-up-button">Sign Up For Our Monthly Newsletter<br>For Access
+                To All The Latest Travel Tips and Tricks!</a>
+            <!-- <p id="confirm"></p> -->
+        </article>
+
+    </div>
+
+
+    <!-- Top Destinations -->
+    <section class="top-destinations">
+        <h1>Top Destinations for 2023</h1>
+
+        <div class="destination-row">
+            <a class="destination-column" id="first-place" href="http://127.0.0.1:5500/destinations.html#asia">
+                <div>
+                    <h3>1. Bali</h3>
+                </div>
+            </a>
+                
+            <a class="destination-column" id="second-place" href="http://127.0.0.1:5500/destinations.html#caribbean">
+                <div>
+                    <h3>2. Punta Cana</h3>
+                </div>
+            </a>
+
+            <a class="destination-column" id="third-place" href="http://127.0.0.1:5500/destinations.html#europe">
+                <div>
+                    <h3>3. Athens</h3>
+                </div>
+            </a>
+
+            <a class="destination-column" id="fourth-place" href="http://127.0.0.1:5500/destinations.html#caribbean">
+                <div>
+                    <h3>4. Montego Bay</h3>  
+                </div>
+            </a>
+
+            
+            <a class="destination-column" id="fifth-place" href="http://127.0.0.1:5500/destinations.html#africa">
+                <div>
+                    <h3>5. South Africa</h3>
+                </div>
+            </a>
+
+            <a class="destination-column" id="sixth-place" href="http://127.0.0.1:5500/destinations.html#caribbean">
+                <div>
+                    <h3>6. Antigua</h3>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- -->
+    <section class="latest-travel-blogs">
+        <h1>Latest Travel Blogs</h1>
+
+        <div class="blog-row">
+            <div class="blog-column" id="blog1">
+                <h3>Best Travel Luggage 2023</h3>
+                <a href="https://theplanetd.com/best-luggage-brands/"></a>
+            </div>
+
+            <div class="blog-column" id="blog2">
+                <h3>Best Travel Credit Cards</h3>
+                <a href="https://thepointsguy.com/credit-cards/travel/"></a>
+
+            </div>
+
+            <div class="blog-column" id="blog3">
+                <h3>Best Travel Accessories for Your Trip</h3>
+                <a href="https://upgradedpoints.com/travel/best-travel-accessories/"></a>
+            </div>
+        </div>
+
+    </section>
+
+    <article class="latest-travel-blogs-titles">
+        <div class="blog-title-row">
+            <div class="blog-title-column">
+                <a href="https://theplanetd.com/best-luggage-brands/">
+                    <h3>Best Travel Luggage 2023</h3>
+                </a>
+            </div>
+
+            <div class="blog-title-column">
+                <a href="https://thepointsguy.com/credit-cards/travel/">
+                    <h3>Best Travel Credit Cards</h3>
+                </a>
+            </div>
+
+            <div class="blog-title-column">
+                <a href="https://upgradedpoints.com/travel/best-travel-accessories/">
+                    <h3>Best Travel Accessories for Your Trip</h3>
+                </a>
+            </div>
+        </div>
+
+    </article>
+
+    <div class="subscribe">
+        <h4>Get Our Monthly Newsletter!</h4>
+        <a id="subscribe_newsletter"></a>
+        <form action="#" id="newsletter-form" method="get" onsubmit="SubscribedToNewsletter()">
+            <input id="email" type="emaiL" placeholder="Enter your email" required>
+            <button type="submit"><i class="fa-regular fa-envelope"></i></button>
+        </form>
+
+        <!--For the Javascript confirmation messages-->
+        <p id="confirm"></p>
+        <p id="confirm2"></p>
+    </div>
+
+
+    <footer>
+        <p>
+            &#169; 2023 Away We Travel. All Rights Reserved
+        </p>
+        <p>
+            <button onclick="printPage()">Print</button>
+        </p>
+    </footer>
+
+    <!-- JavaScript for Media Query to Toggle Navigation Bar-->
+    <script>
+        const navLinks = document.querySelector("#navigationLinks");
+
+        function showNavMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideNavMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+        // Print function to print the home page
+        function printPage() {
+            window.print();
+        }
+
+
+        // Gets the form and paragraph elements
+        const form = document.querySelector("#newsletter-form");
+        const paragraphForConfirmationMessage = document.querySelector("#confirm");
+        const paragraphForConfirmationMessage2 = document.querySelector("#confirm2");
+
+        // Attach an event listener to the form's submit event
+        form.addEventListener("submit", (event) => {
+            // Prevent the form from submitting and refreshing the page
+            event.preventDefault();
+
+            // Get the value of the input field which is user email address
+            const userEmail = document.querySelector("#email").value;
+
+            // Update the paragraph element to display the success message and smiley face
+            paragraphForConfirmationMessage.innerHTML = "You've successfully subscribed!";
+            paragraphForConfirmationMessage2.innerHTML = "Keep an eye out for our monthly newsletter! <i class='fa-regular fa-face-smile'></i>";
+
+            // Clear the success messages after 5 seconds
+            setTimeout(() => {
+                paragraphForConfirmationMessage.innerHTML = "";
+                paragraphForConfirmationMessage2.innerHTML = "";
+            }, 5000);
+
+        });
+
+    </script>
+</body>
+
+
+</html>

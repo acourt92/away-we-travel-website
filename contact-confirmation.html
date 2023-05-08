@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Away We Travel | Confirmation</title>
+
+    <link href="styles/contact-confirmation.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN to add clickable icons to nav menu on small-screen devices-->
+    <script src="https://kit.fontawesome.com/6472a029dc.js" crossorigin="anonymous"></script>
+
+    <link href="images/webpage_travel.ico" rel="icon">
+    
+    <meta name="description" content="Travel stories, travel tips, and a travel bucket list curated
+    for people who love to travel.">
+    <meta name="keywords" content="and away we travel, travel blog, luxury travel, nomad travel, affordable travel">
+    <meta name="author" content="Andrew Court">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="images/away-we-travel-logo.png" alt="And Away We Travel logo"></a>
+
+            <div class="navigation-links" id="navigationLinks">
+                <i class="fa-solid fa-xmark" onclick="hideNavMenu()"></i>
+                <!-- add 'x' icon to nav link for media queries-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="destinations.html">DESTINATIONS</a></li>
+                    <li><a href="tips-for-solo-travel.html">TIPS FOR SOLO TRAVEL</a></li>
+                    <li id="active"><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showNavMenu()"></i> <!--menu icon to nav link for media queries-->
+        </nav>
+
+        <article class="article-text">
+            <h1>Thank you!</h1>
+            <p>
+                We appreciate you taking the time to write to us. Have a wonderful
+                day!
+            </p>
+            <a href="index.html" class="learn-more-button">Return Home</a>
+        </article>
+    </div>
+
+    <footer>
+        <p>
+            &#169; 2023 Away We Travel. All Rights Reserved
+        </p>
+    </footer>
+
+    <!-- JavaScript for Media Query to Toggle Navigation Bar-->
+    <script>
+        const navLinks = document.querySelector("#navigationLinks");
+
+        function showNavMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideNavMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>

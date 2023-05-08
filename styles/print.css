@@ -1,0 +1,358 @@
+@media print {
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+
+    }
+
+    /* Setting the body to max-width: 1200px causes my page to show extra whitespace to
+    the right of the page. In developer tools, 1200px width fills screen, but not sure
+    what this means. */
+    body {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .header {
+        min-height: 75vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+            url(../images/background.webp);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+
+
+    .navigation-links {
+        display: none;
+    }
+
+
+    .article-text {
+        width: 90%;
+        color: white;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+
+    }
+
+    .article-text h1 {
+        font-size: 3.875em;
+    }
+
+    .article-text p {
+        margin: 0.625em 0 2.5em;
+        font-size: 0.875em;
+        color: white;
+    }
+
+    .sign-up-button {
+        /* turn link into a button */
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        padding: 0.75em 2.8333%;
+        font-size: 0.8125em;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+
+
+    .sign-up-button:hover {
+        /* create a hover transition effect for "button" */
+        border: 1px solid red;
+        background: red;
+        transition: 1s;
+    }
+
+    nav .fa-solid {
+        /* hide the icons used in the media queries for the navigation menu */
+        display: none;
+    }
+
+
+    /* Section for Top Destinations */
+
+    /* REMEMBER: I changed the width from 80 to 90 and justify-content to space-evenly */
+    .top-destinations {
+        /* width: 80%; */
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    h1 {
+        font-size: 2.25em;
+        font-weight: 600;
+    }
+
+    .top-destinations h1 {
+        page-break-before: always;
+    }
+
+    .destination-row {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    .destination-column {
+        flex-basis: 31%;
+
+        border-radius: 10px;
+        margin-bottom: 5%;
+
+        padding: 3.75em 1%;
+        box-sizing: border-box;
+        transition: 0.5s;
+
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+
+        text-decoration: none;
+    }
+
+
+
+    #first-place {
+        background-image: url("../images/bali_indonesia.jpeg");
+        background-size: 100%;
+    }
+
+    #second-place {
+        background-image: url("../images/punta-cana.jpeg");
+        background-size: 100%;
+
+    }
+
+    #third-place {
+        background-image: url("../images/athens.jpeg");
+        background-size: 100%;
+    }
+
+    #fourth-place {
+        background-image: url("../images/montego-bay.jpeg");
+        background-size: 100%;
+    }
+
+    #fifth-place {
+        background-image: url("../images/kruger_national_park_southafrica.jpeg");
+        background-size: 100%;
+    }
+
+    #sixth-place {
+        background-image: url("../images/antigua.jpg");
+        background-size: 100%;
+    }
+
+    #first-place,
+    #second-place,
+    #third-place,
+    #fourth-place,
+    #fifth-place,
+    #sixth-place {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+
+    h3 {
+        text-align: center;
+        font-weight: 600;
+        margin: 0.625em 0;
+        color: white;
+    }
+
+    .destination-column:hover {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+
+    }
+
+    /* Latest travel blogs section */
+    /* REMEMBER: I changed the width from 80 to 100 and justify-content to space-between */
+    .latest-travel-blogs {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .latest-travel-blogs h1 {
+        page-break-before: always;
+    }
+
+    .blog-row {
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    .blog-column {
+        /* using padding-top & bottom to make flex item same size as flex items in destinations */
+        flex-basis: 31%;
+        background-color: lightblue;
+        border-radius: 10px;
+        padding: 1.25em 1%;
+        box-sizing: border-box;
+        transition: 0.5s;
+        padding-top: 49px;
+        padding-bottom: 49px;
+
+    }
+
+    .blog-column:hover {
+        box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+
+    }
+
+    #blog1 {
+        background: url(../images/best-luggage-blog.png);
+        background-size: 100%;
+
+    }
+
+    #blog2 {
+        background: url(../images/travel-credit-cards.jpeg);
+        background-size: 100%;
+    }
+
+    #blog3 {
+        background: url(../images/travel-accessories.jpeg);
+        background-size: 100%;
+    }
+
+    #blog1,
+    #blog2,
+    #blog3 {
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        background-repeat: no-repeat;
+    }
+
+    #blog1 h3,
+    #blog2 h3,
+    #blog3 h3 {
+        /* hides the titles titles in the blog images */
+        /* display it in the media query */
+        visibility: hidden;
+    }
+
+    #blog1 a,
+    #blog2 a,
+    #blog3 a {
+        /* makes each blog image a clickable link to the site */
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+
+
+    .latest-travel-blogs-titles {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .blog-title-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .blog-title-column a {
+        text-decoration: none;
+    }
+
+    .blog-title-column h3 {
+        color: black;
+    }
+
+    .blog-title-column {
+        flex-basis: 31%;
+    }
+
+
+    .subscribe {
+        width: 25%;
+        display: grid;
+        margin: 3% auto;
+
+    }
+
+    .subscribe h4 {
+        text-align: center;
+        margin: 5% auto;
+        margin-top: 5%;
+        margin-bottom: 1%;
+    }
+
+
+
+    form {
+        width: 75%;
+        display: grid;
+        grid-template-columns: 90% 1fr;
+        margin: 0 auto;
+        margin-bottom: 5%;
+
+    }
+
+    form button {
+        background-color: rgb(8, 209, 8);
+        margin: 0 auto;
+        padding: 0 30%;
+        border-radius: 1px;
+        cursor: pointer;
+    }
+
+    .fa-regular {
+        justify-content: center;
+    }
+
+    #email {
+        padding-left: 2%;
+    }
+
+    #confirm,
+    #confirm2 {
+        margin: 0 auto;
+        font-size: small;
+        color: red;
+
+    }
+
+
+    footer p {
+        text-align: center;
+        color: #777;
+        font-size: 0.875em;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 0.625em 0.8333%;
+    }
+}

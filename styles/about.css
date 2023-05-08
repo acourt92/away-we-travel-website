@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Setting the body to max-width: 1200px causes my page to show extra whitespace to
+the right of the page. In developer tools, 1200px width fills screen, but not sure
+what this means. */
+body {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 75vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../images/background.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav img{
+    ;
+} */
+
+.navigation-links {
+    flex: 1;
+    text-align: right;
+}
+
+.navigation-links ul li {
+    list-style: none;
+    display: inline-block;
+    /* padding: 8px 12px; */
+    padding: 0.5em 1%;
+    position: relative;
+}
+
+.navigation-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.825em;
+
+}
+
+
+.navigation-links ul li::after {
+    /* add invisible line under each nav item */
+    content: '';
+    width: 0%;
+    /* height: 2px; */
+    height: 0.125em;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigation-links ul li:hover::after {
+    width: 100%;
+}
+
+.navigation-links #active:after {
+    /* style the current active page with red bar under nav item */
+    /* content:''; */
+    width: 100%;
+    /* height: 2px; */
+    height: 0.125em;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.article-text {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.article-text h1 {
+    font-size: 3.875em;
+}
+
+.article-text p {
+    /* margin: 10px 0 40px; */
+    margin: 0.625em 0 2.5em;
+    font-size: 0.875em;
+    color: white;
+}
+
+
+
+nav .fa-solid {
+    /* hide the icons used in the media queries for the navigation menu */
+    display: none;
+}
+
+figure {
+    width: 100%;
+    /* min-height: 20vh */
+}
+
+#img1,
+#img3 {
+    float: left;
+    width: 25%;
+}
+
+#img2,
+#img4 {
+    float: right;
+    width: 25%;
+}
+
+main {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+}
+
+#travel-tales,
+.about-table {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#travel-tales {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../images/tt-background.avif);
+
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+
+#travel-tales h3 {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 1.25em;
+    color: white;
+}
+
+#travel-tales article {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 3%;
+}
+
+#travel-tales article h5 {
+    color: white;
+}
+
+#tale1 p,
+#tale2 p,
+#tale3 p {
+    font-size: 0.75em;
+    /* font-size: 1em; */
+    color: white;
+}
+
+
+
+#tale1 img,
+#tale2 img,
+#tale3 img {
+    width: 50%;
+    float: right;
+    margin: 1% 2%;
+
+}
+
+#tale3 img {
+    height: 60%;
+}
+
+
+.about-table {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../images/do-and-dont-background.avif);
+
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    color: white;
+}
+
+
+caption {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding-top: 2.221%;
+    padding-bottom: 2.221%;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+
+table th,
+table tr,
+table td {
+    width: 50%;
+    height: 50px;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+}
+
+table th {
+    height: 30px;
+    vertical-align: middle;
+}
+
+
+
+table td {
+    text-align: left;
+    font-size: 0.75em;
+}
+
+.fa-face-smile,
+.fa-circle-xmark {
+    font-size: 1.25em;
+    padding-right: 0.5em;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+
+.fa-face-smile {
+    color: greenyellow;
+}
+
+
+.travel-partners-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    /* padding-bottom: 2%; */
+  }
+  
+  .travel-partners-flex-container > * {
+    flex-basis: 100%;
+  }
+  
+  .travel-partners-flex-container h3 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 1%;
+  }
+  
+  .travel-partners-flex-container .recommendation {
+    flex-basis: 33.33%;
+    list-style: none;
+  }
+
+  .travel-partners-flex-container li {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .travel-partners-flex-container h4 {
+    margin: 0;
+    text-decoration: underline;
+  }
+
+  .travel-partners-flex-container li a {
+    color: blue;
+    text-decoration: none;
+  }
+
+  .travel-partners-flex-container li a:visited {
+    color: blue;
+    text-decoration: none;
+  }
+
+footer p {
+    text-align: center;
+    color: #777;
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0.625em 0.8333%;
+}
+
+
+@media (max-width: 767px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .article-text h1 {
+        font-size: 1.25em;
+
+    }
+
+    .navigation-links ul li {
+        display: block;
+    }
+
+    .fa-bars {color: white;}
+
+    .navigation-links {
+        /* create a side navigation bar */
+        position: absolute;
+        background-color: red;
+        height: 100vh;
+        width: 30%;
+        top: 0;
+        right: -30%; /* hides side navigation menu */
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa-solid {
+        /* style and position the icons */
+        display: block;
+        margin: 0.625em;
+        font-size: 1.375em;
+        cursor: pointer;
+
+    }
+
+    .navigation-links ul {
+        padding: 1.875em 7%;
+ 
+    }
+    
+    #img1,
+    #img3 {
+      float: none;
+      width: 100%;
+    }
+    
+    #img2,
+    #img4 {
+      float: none;
+      width: 100%;
+    }
+    
+    main {
+      flex-direction: column;
+    }
+    
+    #travel-tales,
+    .about-table {
+      width: 100%;
+    }
+  }
+  

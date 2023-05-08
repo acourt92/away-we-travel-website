@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Away We Travel | Solo Travel Tips</title>
+
+    <link href="styles/tips-for-solo-travel.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN to add clickable icons to nav menu on small-screen devices-->
+    <script src="https://kit.fontawesome.com/6472a029dc.js" crossorigin="anonymous"></script>
+
+
+
+    <link href="images/webpage_travel.ico" rel="icon">
+
+    <meta name="description" content="Travel stories, travel tips, and a travel bucket list curated
+    for people who love to travel.">
+    <meta name="keywords" content="and away we travel, travel blog, luxury travel, nomad travel, affordable travel">
+    <meta name="author" content="Andrew Court">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="images/away-we-travel-logo.png" alt="And Away We Travel logo"></a>
+
+            <div class="navigation-links" id="navigationLinks">
+                <i class="fa-solid fa-xmark" onclick="hideNavMenu()"></i>
+                <!-- add 'x' icon to nav link for media queries-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="destinations.html">DESTINATIONS</a></li>
+                    <li id="active"><a href="tips-for-solo-travel.html">TIPS FOR SOLO TRAVEL</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showNavMenu()"></i> <!--menu icon to nav link for media queries-->
+        </nav>
+
+        <article class="article-text">
+            <h2 style="font-size: 3em;">Adventures for One:<br>Tips and Tricks for Solo Travelers</h2>
+            <p style="width: 65%; margin: 0 auto; padding-top: 2%; padding-bottom: 2%; line-height: 2;">
+                If you're planning to set off on your own for your next adventure, you've come to the right place. Solo travel can be a
+                thrilling and empowering experience, but it can also be a bit daunting. That's why we've put together this collection of
+                Solo Travel Tips to help you make the most of your solo journey. From safety tips to packing hacks, we've got you
+                covered. So, pack your bags and get ready to hit the road solo-style!
+            </p>
+        </article>
+    </div>
+
+    <main class="tips-grid-container">
+    
+        <section class="tips">
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Do your research and plan ahead to make the most of your trip.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Stay in hostels or other communal accommodations to meet other travelers.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Consider booking a group tour or excursion to explore your destination with others.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Be aware of your surroundings and stay safe, especially when traveling alone.</li>
+            </ul>
+        </section>
+    
+        <section class="tips-image" id="row1-img1">
+    
+        </section>
+    
+        <section class="tips">
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Don't be afraid to step outside of your comfort zone and try new things.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Use technology to stay connected with loved ones and keep them updated on your whereabouts.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Pack light and bring only the essentials to make traveling solo easier.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Keep a journal to record your experiences and reflect on your trip.</li>
+            </ul>
+        </section>
+    
+        <section class="tips-image" id="row2-img1">
+    
+        </section>
+    
+        <section class="tips">
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Make sure to get enough rest and take care of your physical and mental health while traveling.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Learn some basic phrases in the local language to better communicate with locals.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Make copies of important documents like your passport and keep them in a safe place.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Always carry a map or download offline maps to navigate your destination without internet.</li>
+            </ul>
+        </section>
+    
+        <section class="tips-image" id="row2-img2">
+    
+        </section>
+    
+        <section class="tips">
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Be open-minded and embrace the unexpected on your solo adventure.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Take advantage of free walking tours or other budget-friendly activities to save money.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Consider using public transportation or walking to get around and explore your destination.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Keep a backup source of money in case of emergency or unexpected expenses.</li>
+            </ul>
+        </section>
+    
+        <section class="tips-image" id="row3-img1">
+    
+        </section>
+    
+        <section class="tips">
+            <ul>
+                <li><i class="fa-solid fa-location-dot"></i> Try street food or local cuisine to get a taste of the culture and save money on meals.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Trust your instincts and listen to your gut when making decisions.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Stay flexible and adaptable to changes in your itinerary or travel plans.</li>
+                <li><i class="fa-solid fa-location-dot"></i> Enjoy the freedom and independence that comes with traveling solo!</li>
+            </ul>
+        </section>
+    
+    
+    </main>
+
+    <footer>
+        <p>
+            &#169; 2023 Away We Travel. All Rights Reserved
+        </p>
+    </footer>
+      
+
+
+
+
+    <script>
+        const navLinks = document.querySelector("#navigationLinks");
+
+        function showNavMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideNavMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>

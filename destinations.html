@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Away We Travel | Destinations</title>
+
+    <link href="styles/destinations.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN to add clickable icons to nav menu on small-screen devices-->
+    <script src="https://kit.fontawesome.com/6472a029dc.js" crossorigin="anonymous"></script>
+
+
+
+    <link href="images/webpage_travel.ico" rel="icon">
+
+    <meta name="description" content="Travel stories, travel tips, and a travel bucket list curated
+    for people who love to travel.">
+    <meta name="keywords" content="and away we travel, travel blog, luxury travel, nomad travel, affordable travel">
+    <meta name="author" content="Andrew Court">
+</head>
+
+<body>
+
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src="images/away-we-travel-logo.png" alt="And Away We Travel logo"></a>
+
+            <div class="navigation-links" id="navigationLinks">
+                <i class="fa-solid fa-xmark" onclick="hideNavMenu()"></i>
+                <!-- add 'x' icon to nav link for media queries-->
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li id="active"><a href="destinations.html">DESTINATIONS</a></li>
+                    <li><a href="tips-for-solo-travel.html">TIPS FOR SOLO TRAVEL</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showNavMenu()"></i> <!--menu icon to nav link for media queries-->
+        </nav>
+
+        <article class="article-text">
+            <h2>Ready for Adventure?</h2>
+            <p>
+                Our Destinations page is your insider guide to the best places
+                to visit around the globe.
+            </p>
+        </article>
+    </div>
+
+
+    <main class="destinations-grid-container">
+        <section class="section-grid-container" id="usa">
+            <h3>United States</h3>
+            <p>
+                From the bustling streets of New York City to the breathtaking scenery of the Grand Canyon, 
+                the USA has it all when it comes to vacation destinations. Whether you're looking for a relaxing 
+                beach getaway, a thrilling outdoor adventure, or a cultural immersion in one of its many vibrant cities, 
+                the USA has something to offer every type of traveler. 
+            </p>
+            <ol>
+                <li><a href="https://travel.usnews.com/Miami_FL/">Miami, FL</a></li>
+                <li><a href="https://travel.usnews.com/Honolulu_Oahu_HI/">Honolulu, HI</a></li>
+                <li><a href="https://travel.usnews.com/New_York_NY/">New York City, NY</a></li>
+                <li><a href="https://travel.usnews.com/Las_Vegas_NV/">Las Vegas, NV</a></li>
+                <li><a href="https://travel.usnews.com/Vail_CO/">Vail, CO</a></li>
+                <li><a href="https://travel.usnews.com/Nashville_TN/">Nashville, TN</a></li>
+            </ol>
+
+        </section>
+
+        <section class="section-grid-container" id="caribbean">
+            <h3>Caribbean</h3>
+            <p>
+                Escape to paradise and experience the ultimate island getaway in the Caribbean! With its crystal-clear waters,
+                powdery white sand beaches, and laid-back vibe, the Caribbean is the perfect destination for those seeking sun,
+                relaxation, and adventure. Create unforgettable memories with your loved ones, whether it's a romantic getaway, a family
+                vacation, or a fun-filled adventure with friends.
+            </p>
+            <ol>
+                <li><a href="https://travel.usnews.com/Punta_Cana_Dominican_Republic/">Punta Cana</a></li>
+                <li><a href="https://travel.usnews.com/Turks-Caicos/">Turks & Caicos</a></li>
+                <li><a href="https://www.tripadvisor.com/Tourism-g147311-Montego_Bay_Saint_James_Parish_Jamaica-Vacations.html">Montego Bay</a></li>
+                <li><a href="https://travel.usnews.com/Antigua/">Antigua</a></li>
+                <li><a href="https://travel.usnews.com/Aruba/">Aruba</a></li>
+                <li><a href="https://travel.usnews.com/Barbados/">Barbados</a></li>
+              </ol>
+
+        </section>
+
+        <section class="section-grid-container" id="europe">
+            <h3>Europe</h3>
+            <p>
+                Discover the ancient city of Athens, where history and modernity meet. Immerse yourself in the vibrant Greek culture and
+                indulge in the delicious Mediterranean cuisine. But that's not all Europe has to offer. From the romantic streets of
+                Paris to the iconic landmarks of Rome, there's something for every traveler to explore and enjoy.
+            </p>
+            <ol>
+                <li><a href="https://travel.usnews.com/Athens_Greece/">Athens, Greece</a></li>
+                <li><a href="https://travel.usnews.com/Barcelona_Spain/">Barcelona, Spain</a></li>
+                <li><a href="https://travel.usnews.com/Santorini_Greece/">Santorini, Greece</a></li>
+                <li><a href="https://travel.usnews.com/Amsterdam_Netherlands/">Amsterdam, Netherlands</a></li>
+                <li><a href="https://travel.usnews.com/Paris_France/">Paris, France</a></li>
+                <li><a href="https://travel.usnews.com/Prague_Czech_Republic/">Prague, Czech Republic</a></li>
+              </ol>
+
+
+        </section>
+
+
+        <section class="section-grid-container" id="south-america">
+            <h3>South America</h3>
+            <p>
+                From the vibrant rhythms of Rio de Janeiro to the ancient ruins of Machu Picchu, South America offers a rich and diverse
+                travel experience. Discover the lush Amazon rainforest, explore colorful colonial cities, and savor the tantalizing
+                flavors of local cuisine. With stunning natural landscapes and a warm, welcoming culture, South America is a destination
+                that will captivate your senses and leave you with unforgettable memories.
+            </p>
+            <ol>
+                <li><a href="https://www.tripadvisor.com/Tourism-g294318-Machu_Picchu_Sacred_Valley_Cusco_Region-Vacations.html">Machu Picchu, Peru</a></li>
+                <li><a href="https://travel.usnews.com/Rio_de_Janeiro_Brazil/">Rio de Janeiro, Brazil</a></li>
+                <li><a href="https://travel.usnews.com/Buenos_Aires_Argentina/">Buenos Aires, Argentina</a></li>
+                <li><a href="https://travel.usnews.com/Cartagena_Colombia/">Cartagena, Colombia</a></li>
+                <li><a href="https://travel.usnews.com/Galapagos_Islands_Ecuador/">Galapagos Islands, Ecuador</a></li>
+                <li><a href="https://travel.usnews.com/Chilean_Patagonia_Argentina/">Patagonia, Chile</a></li>
+              </ol>
+
+
+        </section>
+
+
+        <section class="section-grid-container" id="asia">
+            <h3>Asia</h3>
+            <p>
+                Get ready to explore the wonders of the world's largest continent, Asia! From the bustling cities of Japan and South
+                Korea, to the stunning beaches of Thailand and Indonesia, to the ancient temples of Cambodia and the majestic mountains
+                of Nepal, Asia has something for every type of traveler. Whether you're seeking adventure, relaxation, or cultural
+                enrichment, this diverse and vibrant continent is sure to leave you in awe.
+            </p>
+            <ol>
+                <li><a href="https://travel.usnews.com/Bali_Indonesia/">Bali, Indonesia</a></li>
+                <li><a href="https://travel.usnews.com/Tokyo_Japan/">Tokyo, Japan</a></li>
+                <li><a href="https://travel.usnews.com/Seoul_South_Korea/">Seoul, South Korea</a></li>
+                <li><a href="https://travel.usnews.com/Phuket_Thailand/">Phuket, Thailand</a></li>
+                <li><a href="https://travel.usnews.com/Bangkok_Thailand/">Bangkok, Thailand</a></li>
+                <li><a href="https://travel.usnews.com/Singapore/">Singapore</a></li>
+              </ol>
+
+
+        </section>
+
+
+        <section class="section-grid-container" id="africa">
+            <h3>Africa</h3>
+            <p>
+                Welcome to the vibrant continent of Africa, where adventure and discovery await at every turn. From the jaw-dropping
+                landscapes of the Sahara desert to the bustling cities of Johannesburg and Nairobi, there is no shortage of experiences
+                to be had. Whether you're exploring ancient ruins, encountering exotic wildlife on safari, or simply relaxing on a
+                beautiful beach, Africa has something for everyone.
+            </p>
+            <ol>
+                <li><a href="https://travel.usnews.com/Cape_Town_South_Africa/">Cape Town, South Africa</a></li>
+                <li><a href="https://travel.usnews.com/Marrakech_Morocco/">Marrakesh, Morocco</a></li>
+                <li><a href="https://www.tripadvisor.com/Tourism-g298253-Malindi_Coast_Province-Vacations.html">Malindi, Kenya</a></li>
+                <li><a href="https://www.tripadvisor.com/Tourism-g482884-Zanzibar_Island_Zanzibar_Archipelago-Vacations.html">Zanzibar Island, Tanzania</a></li>
+                <li><a href="https://travel.usnews.com/Cairo_Egypt/">Cairo, Egypt</a></li>
+                <li><a href="https://travel.usnews.com/Marrakech_Morocco/">Marrakech, Morocco</a></li>
+                </ol>
+
+        </section>
+
+        <section class="section-grid-container" id="australia-new-zealand">
+            <h3>Australia & New Zealand</h3>
+            <p>
+                Get ready for a journey to the land Down Under and its neighbor across the Tasman Sea! Australia and New Zealand offer
+                some of the most breathtaking natural wonders, thrilling outdoor activities, and unique cultural experiences in the
+                world. From the bustling cities of Sydney and Auckland to the rugged Outback and the stunning Milford Sound, you'll find
+                plenty of reasons to fall in love with this part of the world. Get your passport ready and let's explore the land of
+                koalas, kiwis, and kangaroos!
+            </p>
+            <ol>
+                <li><a href="https://travel.usnews.com/Sydney_Australia/">Sydney, Australia</a></li>
+                <li><a href="https://travel.usnews.com/Melbourne_Australia/">Melbourne, Australia</a></li>
+                <li><a href="https://travel.usnews.com/Auckland_New_Zealand/">Auckland, New Zealand</a></li>
+                <li><a href="https://travel.usnews.com/Brisbane_Australia/">Brisbane, Australia</a></li>
+                <li><a href="https://travel.usnews.com/Queenstown_New_Zealand/">Queenstown, New Zealand</a></li>
+                <li><a href="https://www.tripadvisor.com/Tourism-g255337-Gold_Coast_Queensland-Vacations.html">Gold Coast, Australia</a></li>
+              </ol>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <p>
+            &#169; 2023 Away We Travel. All Rights Reserved
+        </p>
+    </footer>
+
+    <!-- Javascript to allow the hover effect to turn red after use clicks back to return to the page-->
+    <script>
+        function markAsVisited(event) {
+            event.target.classList.add("visited");
+        }
+
+        // Javascript for Nav Bar for Media Queries
+        const navLinks = document.querySelector("#navigationLinks");
+
+        function showNavMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideNavMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>

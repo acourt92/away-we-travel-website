@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Setting the body to max-width: 1200px causes my page to show extra whitespace to
+the right of the page. In developer tools, 1200px width fills screen, but not sure
+what this means. */
+body {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 75vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("../images/background.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navigation-links {
+    flex: 1;
+    text-align: right;
+}
+
+.navigation-links ul li {
+    list-style: none;
+    display: inline-block;
+    /* padding: 8px 12px; */
+    padding: 0.5em 1%;
+    position: relative;
+}
+
+.navigation-links ul li a { 
+    color: white;
+    text-decoration: none;
+    font-size: 0.825em;
+    
+}
+
+.navigation-links ul li::after { /* add invisible line under each nav item */
+    content:'';
+    width: 0%;
+    /* height: 2px; */
+    height: 0.125em;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigation-links ul li:hover::after {
+    width: 100%;
+}
+
+.navigation-links #active:after { /* style the current active page with red bar under nav item */
+    /* content:''; */
+    width: 100%;
+    /* height: 2px; */
+    height: 0.125em;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+
+.article-text {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.article-text h2 {
+    font-size: 3em;
+}
+
+.article-text p {
+    /* margin: 10px 0 40px; */
+    margin: 0.625em 0 2.5em ;
+    font-size: 0.875em;
+    color: white;
+}
+
+
+nav .fa-solid{ /* hide the icons used in the media queries for the navigation menu */
+    display: none;
+}
+
+/* Using Grid to style/format the destinations  */
+.destinations-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(451.735px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(438.001, 1fr)); */
+    /* max-width: 100%;
+    height: 1355.200px; */
+}
+  
+  #australia-new-zealand {
+    grid-column: 1 / 3;
+    /* grid-row: 4 / 5; */
+  }
+
+  .section-grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* padding-bottom: 1%; */
+    padding: 4%;
+  }
+  
+  .section-grid-container h3 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.25em;
+  }
+
+.section-grid-container p {
+      font-size: 0.875em;
+      padding-bottom: 2%;
+      /* height: 50%; */
+      /* height: 180px; */
+      max-width: 100%;
+}
+
+#usa p, #caribbean p {
+    height: 120px;
+}
+
+#australia-new-zealand p {
+    height: 100px;
+  }
+
+  #europe p, #south-america p, #asia p, #africa p  {
+    height: 140px;
+  }
+
+.section-grid-container ol {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    margin-top: 0;
+    list-style-type: lower-roman;
+  }
+
+  #usa ol, #south-america ol, #africa ol {
+    margin-left: 9%;
+  }
+  
+  #europe ol {
+    margin-left: 12%;
+  }
+
+#caribbean ol, #australia-new-zealand ol  {
+    margin-left: 5%;
+}
+
+#asia ol {
+    margin-left: 7%;
+}
+
+
+#usa {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url("../images/usa-destinations-background.avif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#caribbean {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url("../images/carribean-destinations-background.avif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#europe {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url("../images/europe-destinations-background.avif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#south-america {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url("../images/south-america-destinations-background.avif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#asia {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url("../images/asia-destinations-background.avif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#africa {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url("../images/africa-destinations-background.avif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+#australia-new-zealand {
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.6)),
+    url("../images/australia-new-zealand-destinations-background.avif");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+ol li a {
+    text-decoration: none;
+}
+
+/* change link color to white */
+ol li a, ol li a:visited {
+    color: white;
+}
+  
+/* change link color to red when hovering */
+ol li a:hover, ol li a:active {
+    color: red;
+}
+  
+/* change cursor to pointer on link hover */
+a:hover, a:active {
+    cursor: pointer;
+}
+  
+
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 0.875em;
+    font-weight: 300;
+    line-height: 22px;
+    /* padding: 10px; */
+    padding: 0.625em 0.8333%;
+}
+
+
+
+  
+
+
+
+@media screen and (max-width: 760px) {
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .article-text h1 {
+        font-size: 1.25em;
+
+    }
+
+    .navigation-links ul li {
+        display: block;
+    }
+
+    .navigation-links { /* create a side navigation bar */
+        position: absolute;
+        background-color: red;
+        height: 100vh;
+        /* width: 200px; */
+        width: 30%;
+        top: 0;
+        /* right: -200px; */
+        right: -30%; /* hides side navigation menu */
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa-solid { /* style and position the icons */
+        display: block;
+        color: #fff;
+        /* margin: 10px; */
+        margin: 0.625em;
+        font-size: 1.375em;
+        cursor: pointer;
+
+    }
+
+    .navigation-links ul {
+        /* padding: 30px; */
+        padding: 1.875em 7%;
+    }
+
+    .destinations-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding: 0.5%;
+      }
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .destinations-grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(9, 1fr);
+      padding: 0.5%;
+    }
+  }
+
+
+
+
+
+
+
+
