@@ -1,7 +1,7 @@
 # away-we-travel-website
 Away We Travel - Static Website Resembling a Travel Blog for CSC 365 (Client-Side Web Development) Project
 
-# Away We Travel Website
+# Away We Travel Website - https://jovial-pony-ad1674.netlify.app
 
 This is the repository for the Away We Travel website, created as a final project for CSC 365 - Client Side Web Development.
 
